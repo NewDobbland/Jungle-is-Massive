@@ -87,14 +87,14 @@ print("You begin approaching the Jungle (is massive).")
 print("""
 """)
 
-time.sleep(1)
-z
+time.sleep(2)
+
 #Armour protects you from the thick thorns and branches
 if armour >= 10:
-  print("""As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.""")
+  print("As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.")
   print("""
         """)
-  time.sleep(2)
+  time.sleep(3)
 
 #You take damage from this if you don't take the armour.
 else:
@@ -103,7 +103,7 @@ else:
   print("You have " + str(health) + " remaining health.")
   print("""
   """)
-  time.sleep(2)
+  time.sleep(3)
 
 
 #This is where the journey truly begins. Left will take you through the standard forest, and Right will lead you towards a tribe of forest folk.
@@ -112,7 +112,7 @@ print("You see 2 paths ahead. To the left, you see a very slight path through th
 print("""
 """)
 
-time.sleep(2)
+time.sleep(3)
 
 left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")
 
