@@ -51,31 +51,26 @@ if starter=="A":
   armour = 10
   print("Your Armour has been increased to 10")
   print("""
-  """)
-  time.sleep(2)
+""")
 elif starter=="a":
   armour = 10
   print("Your Armour has been increased to 10")
   print("""
-  """)
-  time.sleep(2)
+""")
 elif starter=="B":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
-  """)
-  time.sleep(2)
+""")
 elif starter=="b":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
-  """)
-  time.sleep(2)
+""")
 else:
   print("Sorry! We did not recognise your choice.")
   print("""
   """)
-  time.sleep(1)
   starter = input("To start the game, would you like to choose the Leather Armour, or the Bronze Blade? Type 'B' for the blade, or 'A' for the armour: ")
   print("""
 """)
@@ -88,13 +83,12 @@ print("""
 """)
 
 time.sleep(1)
-z
+
 #Armour protects you from the thick thorns and branches
 if armour >= 10:
   print("""As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.""")
   print("""
         """)
-  time.sleep(2)
 
 #You take damage from this if you don't take the armour.
 else:
@@ -102,7 +96,7 @@ else:
   health = health - 5
   print("You have " + str(health) + " remaining health.")
   print("""
-  """)
+""")
   time.sleep(2)
 
 
@@ -119,8 +113,5 @@ left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' fo
 print("""
 """)
 
-#if left_right == "L" or "l":
-  #open Feral Path script
-  
-#if left_right == "R" or "r":
-  #open Feral Path script
+if left_right == "L" or "l":
+  print("As you take the path through the path to the left, you begin to notice some other kind of tracks. Tracks from an animal of some kind.")
