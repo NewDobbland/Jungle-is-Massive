@@ -16,12 +16,17 @@ age = input("Please enter your age: ")
 print("""
 """)
 
-if age >= str(18):
+if int(age) >= 18:
   print("You are old enough to play!")
   print("""
 """)
 else:
   print("Sorry, you need to be 18+ to play this game!")
+  time.sleep(3)
+  print("""
+  """)
+  print("Goodbye")
+  time.sleep(1)
   exit()
 
 #The sections above are the intro to the game, asking for Name and Age, which may be used further down the line.
