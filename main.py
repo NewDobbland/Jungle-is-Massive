@@ -122,5 +122,8 @@ print("""
 #if left_right == "L" or "l":
   #open Feral Path script
   
-#if left_right == "R" or "r":
-  #open Feral Path script
+#else left_right == "R" or "r":
+  #open Gang Path script
+  
+#sleep/check
+#killswitch
