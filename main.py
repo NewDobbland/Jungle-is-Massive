@@ -1,6 +1,8 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
+from subprocess import call
+
 print("Welcome to the Jungle!")
 player_name = input("Please enter your Player Name: ")
 print("""
