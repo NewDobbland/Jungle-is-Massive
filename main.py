@@ -91,9 +91,9 @@ time.sleep(2)
 
 #Armour protects you from the thick thorns and branches
 if armour >= 10:
-  print("As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.")
+  print("""As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.""")
   print("""
-        """)
+  """)
   time.sleep(3)
 
 #You take damage from this if you don't take the armour.
@@ -119,11 +119,23 @@ left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' fo
 print("""
 """)
 
-#if left_right == "L" or "l":
-  #open Feral Path script
-  
-#else left_right == "R" or "r":
-  #open Gang Path script
-  
-#sleep/check
-#killswitch
+
+
+#if left_right=="L";
+#   os.system('mainclone.py')
+# 
+#elif left_right=="l";
+#    os.system('mainclone.py')
+#    
+#elif left_right=="R";
+#    os.system('mainclone.py')
+#    
+#elif left_right=="r";
+#    os.system('mainclone.py')
+#
+#else:
+#  print("Sorry! We did not recognise your choice.")
+#  print("""
+#  """)
+#  time.sleep(1)
+#  left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")
