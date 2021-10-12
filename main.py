@@ -125,6 +125,15 @@ print("""
 
 #if left_right=="L";
 #   os.system('mainclone.py')
+
+
+#TRY THIS
+#   exec(open("filename.py").read())
+
+
+
+
+
 # 
 #elif left_right=="l";
 #    os.system('mainclone.py')
