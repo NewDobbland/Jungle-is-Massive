@@ -57,7 +57,6 @@ elif starter == "B" or "b":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
-
   """)
   time.sleep(2)
 else:
