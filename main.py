@@ -27,14 +27,14 @@ starter = input("To start the game, would you like to choose the Leather Armour,
 print("""
 """)
 
-if starter == "A" or "a":
+if starter == "A" or starter == "a":
   armour = 10
   print("Your Armour has been increased to 10")
   print("""
   """)
   time.sleep(2)
   
-elif starter == "B" or "b":
+elif starter == "B" or starter == "b":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
