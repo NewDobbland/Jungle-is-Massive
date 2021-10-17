@@ -1,8 +1,6 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
-from subprocess import call
-
 print("Welcome to the Jungle!")
 player_name = input("Please enter your Player Name: ")
 print("""
@@ -49,28 +47,17 @@ starter = input("To start the game, would you like to choose the Leather Armour,
 print("""
 """)
 
-if starter=="A":
+if starter == "A" or "a":
   armour = 10
   print("Your Armour has been increased to 10")
   print("""
   """)
   time.sleep(2)
-elif starter=="a":
-  armour = 10
-  print("Your Armour has been increased to 10")
-  print("""
-  """)
-  time.sleep(2)
-elif starter=="B":
+elif starter == "B" or "b":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
-  """)
-  time.sleep(2)
-elif starter=="b":
-  damage = 10
-  print("Your Damage has been increased to 10")
-  print("""
+
   """)
   time.sleep(2)
 else:
@@ -81,6 +68,20 @@ else:
   starter = input("To start the game, would you like to choose the Leather Armour, or the Bronze Blade? Type 'B' for the blade, or 'A' for the armour: ")
   print("""
 """)
+
+#elif starter=="a":
+#  armour = 10
+#  print("Your Armour has been increased to 10")
+#  print("""
+#  """)
+#  time.sleep(2)
+
+#elif starter=="b":
+#  damage = 10
+#  print("Your Damage has been increased to 10")
+#  print("""
+#  """)
+#  time.sleep(2)
 
 #Sleep function to create small time gaps. The number in the brackets signifies the amount of seconds it will wait for.
 time.sleep(2)
@@ -93,7 +94,7 @@ time.sleep(2)
 
 #Armour protects you from the thick thorns and branches
 if armour >= 10:
-  print("""As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.""")
+  print("As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.")
   print("""
   """)
   time.sleep(3)
@@ -107,8 +108,7 @@ else:
   """)
   time.sleep(3)
 
-
-#This is where the journey truly begins. Left will take you through the standard forest, and Right will lead you towards a tribe of forest folk.
+#This is where the journey truly begins. Left will take you through the standard forest, and Right will lead you towards people.
 print("You see 2 paths ahead. To the left, you see a very slight path through the trees and bushes. To the right, tracks that lead down a slightly more obvious pathway.")
 
 print("""
@@ -120,24 +120,3 @@ left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' fo
 
 print("""
 """)
-
-
-
-#if left_right=="L";
-#   os.system('mainclone.py')
-# 
-#elif left_right=="l";
-#    os.system('mainclone.py')
-#    
-#elif left_right=="R";
-#    os.system('mainclone.py')
-#    
-#elif left_right=="r";
-#    os.system('mainclone.py')
-#
-#else:
-#  print("Sorry! We did not recognise your choice.")
-#  print("""
-#  """)
-#  time.sleep(1)
-#  left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")

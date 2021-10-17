@@ -1,6 +1,8 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
+from subprocess import call
+
 print("Welcome to the Jungle!")
 player_name = input("Please enter your Player Name: ")
 print("""
@@ -51,26 +53,31 @@ if starter=="A":
   armour = 10
   print("Your Armour has been increased to 10")
   print("""
-""")
+  """)
+  time.sleep(2)
 elif starter=="a":
   armour = 10
   print("Your Armour has been increased to 10")
   print("""
-""")
+  """)
+  time.sleep(2)
 elif starter=="B":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
-""")
+  """)
+  time.sleep(2)
 elif starter=="b":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
-""")
+  """)
+  time.sleep(2)
 else:
   print("Sorry! We did not recognise your choice.")
   print("""
   """)
+  time.sleep(1)
   starter = input("To start the game, would you like to choose the Leather Armour, or the Bronze Blade? Type 'B' for the blade, or 'A' for the armour: ")
   print("""
 """)
@@ -82,13 +89,14 @@ print("You begin approaching the Jungle (is massive).")
 print("""
 """)
 
-time.sleep(1)
+time.sleep(2)
 
 #Armour protects you from the thick thorns and branches
 if armour >= 10:
-  print("""As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.""")
+  print("As you enter the Jungle, your armour helps defend against the thick branches of thorns that seem to surround it.")
   print("""
-        """)
+  """)
+  time.sleep(3)
 
 #You take damage from this if you don't take the armour.
 else:
@@ -96,22 +104,35 @@ else:
   health = health - 5
   print("You have " + str(health) + " remaining health.")
   print("""
-""")
-  time.sleep(2)
+  """)
+  time.sleep(3)
 
-
-#This is where the journey truly begins. Left will take you through the standard forest, and Right will lead you towards a tribe of forest folk.
+#This is where the journey truly begins. Left will take you through the standard forest, and Right will lead you towards people.
 print("You see 2 paths ahead. To the left, you see a very slight path through the trees and bushes. To the right, tracks that lead down a slightly more obvious pathway.")
 
 print("""
 """)
 
-time.sleep(2)
+time.sleep(3)
 
 left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")
 
 print("""
 """)
 
-if left_right == "L" or "l":
-  print("As you take the path through the path to the left, you begin to notice some other kind of tracks. Tracks from an animal of some kind.")
+#import mainclone
+
+#if left_right=="L";
+#   exec(open("mainclone").read())
+#  else:
+#    print("Sorry! We did not recognise your choice.")
+
+ 
+#elif left_right=="l";
+#    exec(open("mainclone").read())
+#    
+#elif left_right=="R";
+#    exec(open("mainclone").read())
+#    
+#elif left_right=="r";
+#    exec(open("mainclone").read())
