@@ -50,20 +50,6 @@ else:
   print("""
 """)
 
-#elif starter=="a":
-#  armour = 10
-#  print("Your Armour has been increased to 10")
-#  print("""
-#  """)
-#  time.sleep(2)
-
-#elif starter=="b":
-#  damage = 10
-#  print("Your Damage has been increased to 10")
-#  print("""
-#  """)
-#  time.sleep(2)
-
 time.sleep(2)
 
 print("You begin approaching the Jungle (is massive).")
