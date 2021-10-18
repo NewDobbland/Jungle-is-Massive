@@ -86,3 +86,17 @@ left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' fo
 
 print("""
 """)
+
+if left_right == "L" or left_right == "l":
+    import feral
+
+elif left_right == "R" or left_right == "r":
+    import people
+
+else:
+    print("Sorry! We did not recognise your choice.")
+    print("""
+    """)
+    left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")    
+    print("""
+    """)

@@ -1,7 +1,7 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
-from subprocess import call
+#The sections below are the intro to the game, asking for Name and Age, which may be used further down the line.
 
 print("Welcome to the Jungle!")
 player_name = input("Please enter your Player Name: ")
@@ -12,67 +12,35 @@ print("Thanks " + player_name + "!")
 print("""
 """)
 
-time.sleep(1)
-
-age = input("Please enter your age: ")
-print("""
-""")
-
-if int(age) >= 18:
-  print("You are old enough to play!")
-  print("""
-""")
-else:
-  print("Sorry, you need to be 18+ to play this game!")
-  time.sleep(3)
-  print("""
-  """)
-  print("Goodbye")
-  time.sleep(1)
-  exit()
-
-#The sections above are the intro to the game, asking for Name and Age, which may be used further down the line.
-
-#The base stats are created; Health keeps you alive, Stamina keeps you fit, Sanity keeps you healthy, armour keeps you safe, and damage makes you strong.
-
+#The base stats are created; Health keeps you alive, Stamina keeps you fit, Sanity keeps you healthy, armour keeps you safe, and damage makes you stronger.
 health = 100
 stamina = 50
 sanity = 20
 armour = 0
 damage = 0
 
-#Here the players get a choice for some starting equipment, being either Armour or a Sword.
-
+#Sleep function to create small time gaps
 time.sleep(2)
 
+#Here the players get a choice for some starting equipment, being either Armour or a Sword.
 starter = input("To start the game, would you like to choose the Leather Armour, or the Bronze Blade? Type 'B' for the blade, or 'A' for the armour: ")
 print("""
 """)
 
-if starter=="A":
+if starter == "A" or starter == "a":
   armour = 10
   print("Your Armour has been increased to 10")
   print("""
   """)
   time.sleep(2)
-elif starter=="a":
-  armour = 10
-  print("Your Armour has been increased to 10")
-  print("""
-  """)
-  time.sleep(2)
-elif starter=="B":
+  
+elif starter == "B" or starter == "b":
   damage = 10
   print("Your Damage has been increased to 10")
   print("""
   """)
   time.sleep(2)
-elif starter=="b":
-  damage = 10
-  print("Your Damage has been increased to 10")
-  print("""
-  """)
-  time.sleep(2)
+  
 else:
   print("Sorry! We did not recognise your choice.")
   print("""
@@ -82,7 +50,6 @@ else:
   print("""
 """)
 
-#Sleep function to create small time gaps. The number in the brackets signifies the amount of seconds it will wait for.
 time.sleep(2)
 
 print("You begin approaching the Jungle (is massive).")
@@ -120,19 +87,16 @@ left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' fo
 print("""
 """)
 
-#import mainclone
+if left_right == "L" or left_right == "l":
+    import feral
 
-#if left_right=="L";
-#   exec(open("mainclone").read())
-#  else:
-#    print("Sorry! We did not recognise your choice.")
+elif left_right == "R" or left_right == "r":
+    import people
 
- 
-#elif left_right=="l";
-#    exec(open("mainclone").read())
-#    
-#elif left_right=="R";
-#    exec(open("mainclone").read())
-#    
-#elif left_right=="r";
-#    exec(open("mainclone").read())
+else:
+    print("Sorry! We did not recognise your choice.")
+    print("""
+    """)
+    left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")    
+    print("""
+    """)
