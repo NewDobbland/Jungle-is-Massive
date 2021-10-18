@@ -1,6 +1,9 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
+#The base stats are created; Health keeps you alive, Stamina keeps you fit, Sanity keeps you healthy, armour keeps you safe, and damage makes you stronger.
+import stats
+
 #The sections below are the intro to the game, asking for Name and Age, which may be used further down the line.
 
 print("Welcome to the Jungle!")
@@ -11,13 +14,6 @@ print("""
 print("Thanks " + player_name + "!")
 print("""
 """)
-
-#The base stats are created; Health keeps you alive, Stamina keeps you fit, Sanity keeps you healthy, armour keeps you safe, and damage makes you stronger.
-health = 100
-stamina = 50
-sanity = 20
-armour = 0
-damage = 0
 
 #Sleep function to create small time gaps
 time.sleep(2)
@@ -86,3 +82,11 @@ left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' fo
 
 print("""
 """)
+
+if left-right == "L" or left_right == "l":
+    import feral
+elif left_right == "R" or starter == "r":
+    import people
+else:
+    print("Sorry! We did not recognise your choice.")
+    left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")
