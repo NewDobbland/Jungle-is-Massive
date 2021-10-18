@@ -1,8 +1,6 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
-from subprocess import call
-
 print("Welcome to the Jungle!")
 player_name = input("Please enter your Player Name: ")
 print("""
@@ -108,31 +106,9 @@ else:
   time.sleep(3)
 
 #This is where the journey truly begins. Left will take you through the standard forest, and Right will lead you towards people.
-print("You see 2 paths ahead. To the left, you see a very slight path through the trees and bushes. To the right, tracks that lead down a slightly more obvious pathway.")
+print("""You see 2 paths ahead. To the left, you see a very slight path through the trees and bushes. To the right, tracks that lead down a slightly more obvious pathway.""")
 
 print("""
 """)
 
 time.sleep(3)
-
-left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' for Right: ")
-
-print("""
-""")
-
-#import mainclone
-
-#if left_right=="L";
-#   exec(open("mainclone").read())
-#  else:
-#    print("Sorry! We did not recognise your choice.")
-
- 
-#elif left_right=="l";
-#    exec(open("mainclone").read())
-#    
-#elif left_right=="R";
-#    exec(open("mainclone").read())
-#    
-#elif left_right=="r";
-#    exec(open("mainclone").read())
