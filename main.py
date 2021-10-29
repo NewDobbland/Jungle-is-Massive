@@ -1,6 +1,8 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
+import stats
+
 #The sections below are the intro to the game, asking for Name and Age, which may be used further down the line.
 
 print("Welcome to the Jungle!")
@@ -13,11 +15,11 @@ print("""
 """)
 
 #The base stats are created; Health keeps you alive, Stamina keeps you fit, Sanity keeps you healthy, armour keeps you safe, and damage makes you stronger.
-health = 100
-stamina = 50
-sanity = 20
-armour = 0
-damage = 0
+#health = 100
+#stamina = 50
+#sanity = 20
+#armour = 0
+#damage = 0
 
 #Sleep function to create small time gaps
 time.sleep(2)
