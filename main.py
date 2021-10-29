@@ -1,7 +1,11 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
-import stats
+from stats import health
+from stats import stamina
+from stats import sanity
+from stats import armour
+from stats import damage
 
 #The sections below are the intro to the game, asking for Name and Age, which may be used further down the line.
 
