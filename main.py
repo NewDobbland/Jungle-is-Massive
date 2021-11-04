@@ -14,13 +14,6 @@ print("Thanks " + player_name + "!")
 print("""
 """)
 
-#The base stats are created; Health keeps you alive, Stamina keeps you fit, Sanity keeps you healthy, armour keeps you safe, and damage makes you stronger.
-#health = 100
-#stamina = 50
-#sanity = 20
-#armour = 0
-#damage = 0
-
 #Sleep function to create small time gaps
 time.sleep(2)
 
