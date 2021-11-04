@@ -1,10 +1,6 @@
 import time
 
-from stats import health
-from stats import stamina
-from stats import sanity
-from stats import armour
-from stats import damage
+from stats import *
 
 time.sleep(3)
 

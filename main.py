@@ -1,11 +1,7 @@
 #I import the time for use with the Sleep function, to create small time gaps between each line generated.
 import time
 
-from stats import health
-from stats import stamina
-from stats import sanity
-from stats import armour
-from stats import damage
+from stats import *
 
 #The sections below are the intro to the game, asking for Name and Age, which may be used further down the line.
 
@@ -92,6 +88,12 @@ left_right = input("Which way would you like to go? Type 'L' for Left, or 'R' fo
 
 print("""
 """)
+
+print(health)
+print(stamina)
+print(sanity)
+print(armour)
+print(damage)
 
 if left_right == "L" or left_right == "l":
     import feral
