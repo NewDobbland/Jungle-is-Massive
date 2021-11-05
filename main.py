@@ -23,14 +23,14 @@ print("""
 """)
 
 if starter == "A" or starter == "a":
-  armour = 10
+  armour += 10
   print("Your Armour has been increased to 10")
   print("""
   """)
   time.sleep(2)
   
 elif starter == "B" or starter == "b":
-  damage = 10
+  damage += 10
   print("Your Damage has been increased to 10")
   print("""
   """)
